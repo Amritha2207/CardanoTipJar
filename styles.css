@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.tip-form {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.transaction-history {
+    margin-top: 2rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* Existing CSS styles (from previous code) */
+
+.comments {
+    margin-top: 2rem;
+}
+
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+/* Add styles for the coin emoji */
+.coin {
+    font-size: 1.5rem; /* Adjust the size as needed */
+    margin-right: 0.5rem; /* Add spacing between the emoji and button */
+}
+
+/* Add styles for the button */
+button#send-tip-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button#send-tip-button:hover {
+    background-color: #0056b3;
+}
+/* Style for the footer */
+footer {
+    background-color: #333; /* Background color for the footer */
+    color: #fff; /* Text color */
+    text-align: center; /* Center-align the text */
+    padding: 1rem 0; /* Add padding to the top and bottom */
+}
+/* Define a jiggle animation */
+@keyframes jiggle {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-5px) rotate(-5deg); }
+    40% { transform: translateX(5px) rotate(5deg); }
+    60% { transform: translateX(-5px) rotate(-5deg); }
+    80% { transform: translateX(5px) rotate(5deg); }
+    100% { transform: translateX(0); }
+}
+
+/* Apply the "jiggle" animation to the coin */
+.coin.jiggle {
+    animation: jiggle 0.5s ease infinite;
+}
